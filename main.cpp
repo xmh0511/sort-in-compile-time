@@ -35,6 +35,6 @@ constexpr auto sort(Set<T, number...> v){
     return construct_set(v,std::make_index_sequence<sizeof...(number)>());
 }
 int main(){
-   constexpr auto v = sort(Set<int,5,2,1,3>{});
+   constexpr auto v = sort(Set<int,5,2,1,3,0,10,20,11,18,28>{});
    std::cout<< typeid(v).name();
 }
